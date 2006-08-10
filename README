@@ -1,0 +1,8 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1632
+
+This is a minor bug-fix version of the official sh indent script, in order to support the "case" statement.
+
+The default indent style is to put the case labels in the same indent level of the case statement. If you want to increase the indent level of the case labels, just add this line in your .vimrc:
+
+let g:sh_indent_case_labels=1
+
