@@ -36,6 +36,7 @@ function GetShIndent()
                 \ || line =~ '^\s*\<\k\+\>\s*()\s*{'
                 \ || line =~ '^\s*[^(]\+\s*)'
                 \ || line =~ '^\s*{'
+                \ || line =~ '^\s*function\s*\<\k\+\>\s*\(()\)\?\s*{'
         if line !~ '\(esac\|fi\|done\)\>\s*$' && line !~ '}\s*$'
             let ind = ind + &sw
         endif
